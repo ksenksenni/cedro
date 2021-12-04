@@ -184,7 +184,7 @@ body {
     margin: 0;
     padding: 50px 0;
     list-style: none;
-    background-color: red;
+    background-color: #ffffff;
     transition-duration: 0.4s;
     z-index: 999;
 }
@@ -266,4 +266,17 @@ body {
 
 .burger-link:hover .burder-svg {
     fill: #D0BC7A;
+}
+
+.aside-block {
+    padding-left: 0;
+}
+
+.aside {
+    list-style: none;
+    padding: 0;
+}
+
+.aside-link {
+    color: #D0BC7A;
 }
