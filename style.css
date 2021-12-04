@@ -275,8 +275,45 @@ body {
 .aside {
     list-style: none;
     padding: 0;
+    padding-top: 120px;
+}
+
+@media(max-width: 800px) {
+    .aside {
+        display: none;
+    }
+}
+
+.link-gold {
+    color: #D0BC7A;
+}
+
+.forms {
+    padding-left: 95px;
+    padding-top: 126px;
+}
+
+.title {
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.aside-mobile {
+    display: none;
 }
 
 .aside-link {
-    color: #D0BC7A;
+    font-size: 14px;
+}
+
+@media(max-width: 800px) {
+    .aside-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
 }
