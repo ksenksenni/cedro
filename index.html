@@ -157,57 +157,68 @@
                 <h1 class="title">Профиль</h1>
 
                 <section>
-                    <h3>Данные профиля</h3>
+                    <h3 class="heading">Данные профиля</h3>
 
-                    <form action="">
+                    <form class="profile-block" action="">
                         <div>
-                            <label for="name">ФИО</label>
-                            <input type="text" id="name" value="Алексеева Ульяна Евгеньевна" placeholder="Имя">
+                            <label class="label" for="name">ФИО</label><br>
+                            <input class="input" type="text" id="name" value="Алексеева Ульяна Евгеньевна" placeholder="Имя">
                         </div>
 
                         <div>
-                            <label for="email">Почта</label>
-                            <input type="text" id="email" value="pochta07@mail.ru" placeholder="Почта">
+                            <label class="label" for="email">Почта</label><br>
+                            <input class="input" type="text" id="email" value="pochta07@mail.ru" placeholder="Почта">
                         </div>
 
                         <div>
-                            <label for="phone">Телефон</label>
-                            <input type="text" id="phone" value="+7 (999) 999-99-99" placeholder="Телефон">
+                            <label class="label" for="phone">Телефон</label><br>
+                            <input class="input" type="text" id="phone" value="+7 (999) 999-99-99" placeholder="Телефон">
                         </div>
 
                         <div>
-                            <label for="nickname">Имя аккаунта</label>
-                            <input type="text" id="nickname" value="Alex Y.E." placeholder="Имя пользователя">
+                            <label class="label" for="nickname">Имя аккаунта</label><br>
+                            <input class="input" type="text" id="nickname" value="Alex Y.E." placeholder="Имя пользователя">
                         </div>
 
                         <div>
-                            <label for="instagram">Профиль в инстаграм</label>
-                            <input type="text" id="instagram" value="@Alex_YE" placeholder="Аккаунт в Инстаграм">
+                            <label class="label" for="instagram">Профиль в инстаграм</label><br>
+                            <input class="input" type="text" id="instagram" value="@Alex_YE" placeholder="Аккаунт в Инстаграм">
                         </div>
 
                         <div>
-                            <label for="adress">Адрес доставки</label>
-                            <input type="text" id="adress" placeholder="Город, улица, дом">
-                        </div>
-                    </form>
-
-                    <h3>Изменить пароль</h3>
-
-                    <form action="">
-                        <div>
-                            <label for="old-password">Старый пароль</label>
-                            <input type="password" id="old-password" placeholder="•••••••••••••••••••">
-                            <input type="submit"></button>
-                        </div>
-
-                        <div>
-                            <label for="new-password">Новый пароль</label>
-                            <input type="password" id="new-password" placeholder="Введите новый пароль">
-                            <input type="submit"></button>
+                            <label class="label" for="adress">Адрес доставки</label><br>
+                            <input class="input" type="text" id="adress" placeholder="Город, улица, дом">
                         </div>
                     </form>
 
-                    <button>Сохранить изменения</button>
+                    <h3 class="heading">Изменить пароль</h3>
+
+                    <form action="password-block">
+                        <div class="password">
+                            <label class="label" for="old-password">Старый пароль</label><br>
+                            <input class="input" type="password" id="old-password" placeholder="•••••••••••••••••••">
+                            <button class="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7C15.7855 7 21 12 21 12C21 12 15.7855 17 12 17C8.21453 17 3 12 3 12C3 12 8.21453 7 12 7Z" stroke="#A1A3A7" stroke-width="1.5" class="svg-form"/>
+                                <circle cx="12" cy="12" r="2" stroke="#A1A3A7" stroke-width="1.5" class="svg-form"/>
+                                </svg>
+                                <img class="show-password" src="images/crossed-out.png" alt="показать пароль">
+                            </button>
+                        </div>
+
+                        <div class="password">
+                            <label class="label" for="new-password">Новый пароль</label><br>
+                            <input class="input" type="password" id="new-password" placeholder="Введите новый пароль">
+                            <button class="button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7C15.7855 7 21 12 21 12C21 12 15.7855 17 12 17C8.21453 17 3 12 3 12C3 12 8.21453 7 12 7Z" stroke="#A1A3A7" stroke-width="1.5" class="svg-form"/>
+                                    <circle cx="12" cy="12" r="2" stroke="#A1A3A7" stroke-width="1.5" class="svg-form"/>
+                                    </svg>
+                                </button>
+                        </div>
+                    </form>
+
+                    <button class="submit">Сохранить изменения</button>
                 </section>
             </div>
         </div>

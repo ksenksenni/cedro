@@ -288,16 +288,6 @@ body {
     color: #D0BC7A;
 }
 
-.forms {
-    padding-left: 95px;
-    padding-top: 126px;
-}
-
-.title {
-    font-size: 80px;
-    text-transform: uppercase;
-}
-
 .aside-mobile {
     display: none;
 }
@@ -316,4 +306,85 @@ body {
         list-style: none;
         justify-content: space-between;
     }
+}
+
+.forms {
+    padding-left: 95px;
+    padding-top: 126px;
+}
+
+.title {
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.profile-block {
+    padding-bottom: 80px;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+
+.label {
+    opacity: 0.4;
+}
+
+.input {
+    width: 544px;
+    background-color: #F7F7F7;
+    border-radius: 4px;
+    border: none;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.password-block {
+    padding-bottom: 80px;
+}
+
+.password {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 37px;
+    left: 498px;
+}
+
+.button:hover .svg-form {
+    fill: #21242E
+}
+
+.button:active .svg-form {
+    display: none;
+}
+
+.button:active .show-password {
+    display: block;
+    position: absolute;
+    top: 37px;
+    left: 498px;
+}
+
+.show-password {
+    display: none;
+}
+
+.submit {
+    margin-top: 80px;
+    padding: 16px 32px;
+    background-color: #21242E;
+    color: #ffffff;
+    border: none;
+}
+
+.submit:hover {
+    background-color: #D0BC7A;
 }
