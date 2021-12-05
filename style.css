@@ -314,12 +314,14 @@ body {
 .forms {
     padding-left: 95px;
     padding-top: 126px;
+    padding-bottom: 112px;
     max-width: 544px;
 }
 
 @media(max-width: 800px) {
     .forms {
         padding-left: 16px;
+        padding-bottom: 64px;
     }
 }
 
@@ -407,4 +409,139 @@ body {
 
 .submit:hover {
     background-color: #D0BC7A;
+}
+
+
+/* catalog */
+
+.catalog {
+    position: relative;
+}
+
+.heading {
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 800px) {
+    .heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+.gold-heading {
+    color: #D0BC7A;
+}
+
+.catalog-link {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    text-transform: none;
+    font-size: 16px;
+    color: #21242E;
+    text-decoration: none;
+}
+
+@media(max-width: 800px) {
+    .catalog-link {
+        top: 746px;
+        right: 240px;
+    }
+}
+
+.catalog-link:hover {
+    opacity: 0.56;
+    color: #21242E;
+}
+
+
+/* slider */
+
+.slider-block {
+    width: 100%;
+}
+
+.card {
+    width: 256px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+}
+
+.card:hover {
+    border: 1px solid rgba(33, 36, 46, 0.4);
+    color: #D0BC7A;
+}
+
+
+/* .glide__slide--active {
+    width: 256px;
+} */
+
+.card-img-top {
+    border-bottom: 12px solid #C08D74;
+}
+
+.card-img-top:nth-child(even) {
+    border-bottom: 12px solid #EA976F;
+}
+
+.card-img-top:nth-child(3) {
+    border-bottom: 12px solid #C07474;
+}
+
+.sticker {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: #EB5757;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 12px 6px 12px;
+    border-radius: 100px;
+}
+
+.button-card {
+    position: absolute;
+    top: 23px;
+    right: 25px;
+}
+
+.button-card:hover .svg-card {
+    fill: #21242E;
+    opacity: 0.6;
+}
+
+.button-card:active .svg-card {
+    fill: #D0BC7A;
+}
+
+.card-text {
+    margin-left: 24px;
+}
+
+.italic {
+    font-family: 'PFRegalDisplayPro', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.description {
+    font-size: 14px;
+    color: #21242E !important;
+}
+
+.price {
+    color: #21242E !important;
+}
+
+.old-price {
+    text-decoration: line-through;
+    margin-left: 8px;
+    opacity: 0.6;
 }
