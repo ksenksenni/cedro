@@ -196,7 +196,6 @@ body {
     padding: 50px 0;
     list-style: none;
     background-color: #ffffff;
-    /* background-color: red; */
     transition-duration: 0.4s;
     z-index: 555;
 }
@@ -299,6 +298,12 @@ body {
     padding-top: 120px;
 }
 
+@media(max-width: 1050px) {
+    .aside {
+        padding-left: 10px;
+    }
+}
+
 @media(max-width: 800px) {
     .aside {
         display: flex;
@@ -312,12 +317,18 @@ body {
     .aside-item:nth-child(2) {
         position: absolute;
         top: 8px;
-        left: 65px;
+        left: 95px;
     }
 }
 
 .link-gold {
     color: #D0BC7A;
+}
+
+@media(max-width: 1050px) {
+    .link-aside {
+        font-size: 14px;
+    }
 }
 
 
@@ -336,11 +347,6 @@ body {
         padding-bottom: 64px;
     }
 }
-
-
-/* .forms-block {
-    border-top: 1px solid #EBEBEB;
-} */
 
 .title {
     font-size: 80px;
@@ -369,6 +375,11 @@ body {
     padding: 16px;
     margin-top: 12px;
     margin-bottom: 24px;
+}
+
+.input:focus {
+    border: 1px solid #F7F7F7;
+    color: #21242E;
 }
 
 .password-block {
@@ -433,11 +444,14 @@ body {
 
 .catalog {
     border-top: 1px solid #EBEBEB;
+    padding-top: 112px;
+    padding-bottom: 80px;
 }
 
 @media(max-width: 800px) {
     .catalog {
         border: none;
+        padding-bottom: 100px;
     }
 }
 
@@ -445,14 +459,15 @@ body {
     position: relative;
 }
 
-.heading {
+.heading-catalog {
     font-size: 48px;
     line-height: 56px;
     text-transform: uppercase;
+    margin-bottom: 48px;
 }
 
 @media(max-width: 800px) {
-    .heading {
+    .heading-catalog {
         font-size: 28px;
         line-height: 32px;
     }
@@ -474,8 +489,8 @@ body {
 
 @media(max-width: 800px) {
     .catalog-link {
-        top: 746px;
-        right: 240px;
+        top: 580px;
+        right: 260px;
     }
 }
 
@@ -487,12 +502,8 @@ body {
 
 /* slider */
 
-.slider-block {
-    width: 100%;
-}
-
 .card {
-    width: 256px;
+    width: 256px !important;
     background-color: #F7F7F7;
     border-radius: 8px;
     border: none;
@@ -503,11 +514,6 @@ body {
     border: 1px solid rgba(33, 36, 46, 0.4);
     color: #D0BC7A;
 }
-
-
-/* .glide__slide--active {
-    width: 256px;
-} */
 
 .card-img-top {
     border-bottom: 12px solid #C08D74;
