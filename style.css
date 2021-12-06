@@ -423,6 +423,16 @@ body {
 /* catalog */
 
 .catalog {
+    border-top: 1px solid #EBEBEB;
+}
+
+@media(max-width: 800px) {
+    .catalog {
+        border: none;
+    }
+}
+
+.catalog-block {
     position: relative;
 }
 
@@ -613,18 +623,26 @@ body {
 }
 
 .footer-middle {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #EBEBEB;
-    border-bottom: 1px solid #EBEBEB;
 }
 
 @media(max-width: 800px) {
     .footer-middle {
-        flex-direction: column;
         padding-bottom: 40px;
+    }
+}
+
+.middle-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+    .middle-block {
+        flex-direction: column;
     }
 }
 
